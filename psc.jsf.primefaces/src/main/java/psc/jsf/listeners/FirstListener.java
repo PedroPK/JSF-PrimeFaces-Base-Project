@@ -8,12 +8,12 @@ public class FirstListener implements PhaseListener {
 
 	public void afterPhase(PhaseEvent event) {
 		// TODO Auto-generated method stub
-		System.out.println(event.toString());
+		System.out.println("After " + event.getPhaseId().toString());
 	}
 
 	public void beforePhase(PhaseEvent event) {
 		// TODO Auto-generated method stub
-		System.out.println(event.toString());
+		System.out.println("Before " + event.getPhaseId().toString());
 	}
 
 	public PhaseId getPhaseId() {
